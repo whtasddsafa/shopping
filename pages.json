@@ -1,0 +1,81 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/home",
+			"style": {}
+
+		}, {
+			"path": "pages/cate/cate",
+			"style": {}
+
+		}, {
+			"path": "pages/cart/cart",
+			"style": {}
+
+		}, {
+			"path": "pages/my/my",
+			"style": {}
+
+		}
+	],
+	"subPackages": [{
+		"root": "subpkg",
+		"pages": [
+
+			{
+				"path": "goods_detail/goods_detail",
+				"style": {
+
+				}
+
+			}, {
+				"path": "goods_list/goods_list",
+				"style": {
+					"enablePullDownRefresh":true,
+					"backgroundColor":"#c00000"
+				}
+
+			}, {
+				"path": "search/search",
+				"style": {
+
+				}
+
+			}
+		]
+	}],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "乐享购",
+		"navigationBarBackgroundColor": "#42bd56",
+		"backgroundColor": "#FFFFFF"
+	},
+	"tabBar": {
+		"selectedColor": "#42bd56",
+		"list": [{
+				"pagePath": "pages/home/home",
+				"text": "首页",
+				"iconPath": "./static/footer/ic_tab_home_normal.png",
+				"selectedIconPath": "./static/footer/ic_tab_home_active.png"
+			},
+			{
+				"pagePath": "pages/cate/cate",
+				"text": "分类",
+				"iconPath": "./static/footer/ic_tab_group_normal.png",
+				"selectedIconPath": "./static/footer/ic_tab_group_active.png"
+			},
+			{
+				"pagePath": "pages/cart/cart",
+				"text": "购物车",
+				"iconPath": "./static/footer/ic_tab_status_normal.png",
+				"selectedIconPath": "./static/footer/ic_tab_status_active.png"
+			},
+			{
+				"pagePath": "pages/my/my",
+				"text": "我的",
+				"iconPath": "./static/footer/ic_tab_profile_normal.png",
+				"selectedIconPath": "./static/footer/ic_tab_profile_active.png"
+			}
+		]
+	}
+}
